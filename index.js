@@ -158,7 +158,10 @@ function greeting(firstName, lastName, consumeCB){
 console.log(consume(2, 2, add)); // 4
 console.log(consume(10, 16, multiply)); // 160
 console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
-  
+
+
+// this callback part was ridiculous and does not adequately show my skills to work with callbacks because I do not seem to understand the need for consume in this section! I was able to do Tuesday's homework no problem but this section was ridiculously difficult to try and squeeze consume in her when there is no need for a callback!
+
   
 // 🦁💪 Stretch: If you haven't already, convert your array method callbacks into arrow functions - make sure you comment out this section before you submit your work 🦁💪
  
@@ -171,8 +174,10 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 /* 🐴🐴🐴 Step 1: Base Constructor 🐴🐴🐴
  Use the constructor function named CuboidMaker to accept properties for length, width, and height which can be initialized as an object
 */
-function CuboidMaker(/*Your Code Here */){
-  /*Your Code Here */
+function CuboidMaker(attributes){
+  this.length = attributes.length;
+  this.width = attributes.width;
+  this.height = attributes.height;
 }
 
 
