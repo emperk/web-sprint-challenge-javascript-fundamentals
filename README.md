@@ -29,13 +29,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+    // ANSWER: Firstly, `.forEach`  iterates through every item in an array but does not return a new array. `.map` does the same (iterating through every item in an array), however it DOES return a new array. If you explicitly wanted to use `.forEach` to solve a problem, you would have to push the results into an established array, unlike with `.map`.
+
 2. Explain the difference between a callback and a higher order function.
+
+    // ANSWER: The main & obvious different is that a higher order function receives other function and a callback function is passed into another function as an argument. In other words, a higher order function would receive a callback function as an argument.
 
 3. What is closure?
 
+    // ANSWER: Closure is best described as what occurs when a nested/inner function reaches out of its scope to use a variable defined in the outer function.
+
 4. Describe the four rules of the 'this' keyword.
 
+    // ANSWER: The four principles of the 'this' keyword are about binding.
+        // 1. Implicit Binding, which applies to objects that have methods. When a function method is invoked, 'this' refers to what's left to the dot.
+        // 2. Explicit Binding, if 'apply', 'call', or 'bind' are used to call a function, 'this' inside the function is the object that's passed in as an argument
+        // 3. Window Binding, if the function is invoked as a FREE FUNCTION INVOCATION, meaning it was invoked without any of the conditions present above, 'this' is the global object. In a browser, it's called 'window'.
+        // 4. New Binding, which occurs if the 'new' keyword is used when calling the function, 'this' inside the function is a brand new object.
+
 5. Why do we need super() in an extended class?
+
+    // ANSWER: `super()` is a function that needs to be called from within the constructor function if we are wanting to pass any new attributes back up to the constructor of the parent object.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
