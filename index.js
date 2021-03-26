@@ -136,28 +136,28 @@ function consume(a, b, cb){
   /* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
  // 🦁🦁🦁 Use add to return the sum of two numbers 🦁🦁🦁
   
-function add(num1, num2, consumeCB){
-  return num1 + num2;
-}
+// function add(num1, num2, consumeCB){
+//   return num1 + num2;
+// }
 
 
 // 🦁🦁🦁 Use multiply to return the product of two numbers 🦁🦁🦁
   
-function multiply(num1, num2, consumeCB){
-  return num1 * num2;
-}
+// function multiply(num1, num2, consumeCB){
+//   return num1 * num2;
+// }
 
  // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
   
-function greeting(firstName, lastName, consumeCB){
-  return `Hello ${firstName} ${lastName}, nice to meet you!`
-}
+// function greeting(firstName, lastName, consumeCB){
+//   return `Hello ${firstName} ${lastName}, nice to meet you!`
+// }
   
   // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
   // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
-console.log(consume(2, 2, add)); // 4
-console.log(consume(10, 16, multiply)); // 160
-console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+//console.log(consume(2, 2, add)); // 4
+//console.log(consume(10, 16, multiply)); // 160
+//console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
 
 // this callback part was ridiculous and does not adequately show my skills to work with callbacks because I do not seem to understand the need for consume in this section! I was able to do Tuesday's homework no problem but this section was ridiculously difficult to try and squeeze consume in her when there is no need for a callback!
@@ -165,8 +165,11 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
   
 // 🦁💪 Stretch: If you haven't already, convert your array method callbacks into arrow functions - make sure you comment out this section before you submit your work 🦁💪
  
+const add = (num1, num2) => {return num1 + num2};
 
+const multiply = (num1, num2) => {return num1 * num2};
 
+const greeting = (firstName, lastName) => {return `Hello ${firstName} ${lastName}, nice to meet you!`};
 
 
 // 🐴🐴🐴 Topic 3: Prototypes 🐴🐴🐴 //
