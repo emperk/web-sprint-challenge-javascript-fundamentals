@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+// Internal is functioned scope, which means that variables that are declared inside of functions are private to that function. In this case, the variable 'internal' is private to myFunction. myFunction also includes the function nestedFunction so that would mean that nestedFunction also has access to internal.
 
 
 
@@ -28,10 +28,15 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(num) {
+  let counter = 0;
+  for(let i = 0; i <= num; i++) {
+    counter += i;
   }
+  return counter;
+}
+console.log(summation(4));
+
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
@@ -56,9 +61,16 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames(arr){
+    const displayNames = [];
+    arr.forEach(function(item){
+      const displayName = `name: ${item.animal_name}, scientific: ${item.scientific_name}`;
+      displayNames.push(displayName);
+    })
+    return displayNames;
   }
+
+  console.log("TOPIC 2-REQUEST 1: ", animalNames(zooAnimals));
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
